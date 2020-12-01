@@ -14,8 +14,13 @@
           class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
         >
           <img
-            v-if="article.img"
-            class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+            v-if="article.renderimg"
+            class="h-48 xxlmin:w-1/2 xxlmax:w-full object-contain"
+            :src="article.renderimg"
+          />
+          <img
+            v-else
+            class="h-48 xxlmin:w-1/2 xxlmax:w-full object-contain"
             :src="article.img"
           />
 
@@ -71,7 +76,7 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
+      .only(['title', 'description', 'img', 'slug', 'author', 'renderimg'])
       .sortBy('createdAt', 'desc')
       .fetch()
     const tags = await $content('tags', params.slug)
@@ -87,6 +92,10 @@ export default {
 </script>
 
 <style class="postcss">
+.object-contain {
+  object-fit: contain;
+}
+
 .article-card {
   border-radius: 8px;
 }

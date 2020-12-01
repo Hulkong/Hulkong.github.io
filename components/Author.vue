@@ -1,8 +1,9 @@
 <template>
   <div class="w-full px-2 xs:mb-6 md:mb-12 article-card">
-    <NuxtLink
-      :to="`/blog/author/${author.name}`"
+    <a
+      :href="`https://github.com/${author.name}`"
       class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
+      target="_blank"
     >
       <img
         v-if="author.img"
@@ -15,7 +16,7 @@
         <p>{{ author.name }}</p>
         <p>{{ author.bio }}</p>
       </div>
-    </NuxtLink>
+    </a>
   </div>
 </template>
 
