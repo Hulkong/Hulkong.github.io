@@ -13,12 +13,12 @@ tags:
   - web development
 ---
 
-> > pgpool.conf
+> pgpool.conf
 
 - pgpool.conf는 메인구성파일
 - 시작할 때 -f 옵션을 부여하여 파일 경로를 지정해야 함
 
-> > Mode
+> Mode
 
 - 스트리밍 복제모드(Streaming replication mode)
 - 논리 복제모드(logical replication mode)
