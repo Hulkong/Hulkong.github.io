@@ -42,8 +42,8 @@ docker network connect my-network gitlab-runner
 docker exec -it gitlab-runner bash
 
 # ssl 서버인증서 설정
-touch /etc/gitlab-runner/certs/git.openmate-on.co.kr.crt
-echo | openssl s_client -CAfile /etc/gitlab-runner/certs/git.openmate-on.co.kr.crt -connect git.openmate-on.co.kr:443
+touch /etc/gitlab-runner/certs/'input .crt file'
+echo | openssl s_client -CAfile /etc/gitlab-runner/certs/'input .crt file' -connect 'input server domain':443
 
 # runner 등록
 gitlab-runner register -n \
@@ -66,13 +66,15 @@ docker run --detach \
     --volume /var/run/docker.sock:/var/run/docker.sock \
     gitlab/gitlab-runner:alpine-v10.7.4
 
+docker exec -it gitlab-runner bash
+
 # ssl 서버인증서 설정
-touch /etc/gitlab-runner/certs/git.openmate-on.co.kr.crt
-echo | openssl s_client -CAfile /etc/gitlab-runner/certs/git.openmate-on.co.kr.crt -connect git.openmate-on.co.kr:443
+touch /etc/gitlab-runner/certs/'input .crt file'
+echo | openssl s_client -CAfile /etc/gitlab-runner/certs/'input .crt file' -connect 'input server domain':443
 
 # runner 등록
 gitlab-runner register -n \
---url https://git.openmate-on.co.kr/ \
+--url 'input git domain or ip' \
 --registration-token 'input the token' \
 --description gitlab-runner \
 --executor docker \
@@ -85,11 +87,14 @@ gitlab-runner register -n \
 
 # 컨테이너 생성과 동시에 runner 등록하는 방법
 docker run -it  \
---volume /home/hulkong/git.openmate-on.co.kr.crt:/git.openmate-on.co.kr.crt \
+--detach \
+--name gitlab-runner \
+--volume /home/hulkong/'input .crt file':/'input .crt file' \
+--volume /var/run/docker.sock:/var/run/docker.sock \
 gitlab/gitlab-runner:alpine-v10.7.4 \
 register -n \
---tls-ca-file /git.openmate-on.co.kr.crt \
---url https://git.openmate-on.co.kr/ \
+--tls-ca-file /'input .crt file' \
+--url 'input git domain or ip' \
 --registration-token 'input the token' \
 --description gitlab-runner \
 --executor docker \
@@ -100,7 +105,7 @@ register -n \
 
 ```bash
 # 서버인증서 가져오는 프로세스
-openssl s_client -connect git.openmate-on.co.kr:443 |tee certlog
+openssl s_client -connect 'input server domain':443 |tee certlog
 openssl x509 -inform PEM -in certlog -text -out certdata
 openssl x509 -inform PEM -text -in certdata
 
