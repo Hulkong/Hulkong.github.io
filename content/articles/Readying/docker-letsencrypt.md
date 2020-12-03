@@ -1,5 +1,5 @@
 ---
-title: [docker] Let's Encrypt 와일드카드 인증서 발급
+title: docker Let's Encrypt 와일드카드 인증서 발급
 description: Let's Encrypt 와일드카드 인증서 발급
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

@@ -1,5 +1,5 @@
 ---
-title: [Infra] Install Habor
+title: Infra Install Habor
 description: Install Habor
 renderimg: /blog/infra_512.png
 img: /blog/landscape_1920.jpg

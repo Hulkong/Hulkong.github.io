@@ -1,5 +1,5 @@
 ---
-title: [Infra] 'nomad : 가벼운 스케쥴러, 강력한 성능'
+title: Infra nomad
 description: 'nomad : 가벼운 스케쥴러, 강력한 성능'
 renderimg: /blog/infra_512.png
 img: /blog/landscape_1920.jpg

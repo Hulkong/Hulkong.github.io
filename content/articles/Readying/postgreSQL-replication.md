@@ -1,5 +1,5 @@
 ---
-title: [postgreSQL] Replication
+title: postgreSQL Replication
 description: Replication
 renderimg: /blog/postgreSQL_512.png
 img: /blog/landscape_1920.jpg

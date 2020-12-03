@@ -1,5 +1,5 @@
 ---
-title: [docker] Nginx를 사용하여 웹 앱 구축
+title: docker Nginx를 사용하여 웹 앱 구축
 description: Nginx를 사용하여 웹 앱 구축
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

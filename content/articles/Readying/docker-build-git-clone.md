@@ -1,5 +1,5 @@
 ---
-title: [Docker] 빌드 시 소스파일 git으로 얻어오기
+title: Docker 빌드 시 소스파일 git으로 얻어오기
 description: 빌드 시 소스파일 git으로 얻어오기
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

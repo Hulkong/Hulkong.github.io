@@ -1,5 +1,5 @@
 ---
-title: [docker] Mysql 설치
+title: docker Mysql 설치
 description: Mysql 설치
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

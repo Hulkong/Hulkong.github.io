@@ -1,5 +1,5 @@
 ---
-title: [docker] 이미지생성
+title: docker 이미지생성
 description: 이미지생성
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

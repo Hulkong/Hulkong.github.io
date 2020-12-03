@@ -1,5 +1,5 @@
 ---
-title: [docker] dJango 배포
+title: docker dJango 배포
 description: dJango 배포
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

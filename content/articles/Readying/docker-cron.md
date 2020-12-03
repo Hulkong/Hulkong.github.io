@@ -1,5 +1,5 @@
 ---
-title: [docker] cron 생성
+title: docker cron 생성
 description: cron 생성
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

@@ -1,5 +1,5 @@
 ---
-title: [Infra] Kubernetes vs Swarm vs Mesos 비교
+title: Infra Kubernetes vs Swarm vs Mesos 비교
 description: Kubernetes vs Swarm vs Mesos 비교
 renderimg: /blog/infra_512.png
 img: /blog/landscape_1920.jpg

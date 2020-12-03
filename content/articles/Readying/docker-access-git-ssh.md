@@ -1,5 +1,5 @@
 ---
-title: [docker] Dockerfile에서 private git 접근권한 설정(SSH)
+title: docker Dockerfile에서 private git 접근권한 설정(SSH)
 description: Dockerfile에서 private git 접근권한 설정(SSH)
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg

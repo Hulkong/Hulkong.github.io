@@ -1,5 +1,5 @@
 ---
-title: [docker] RUN vs CMD vs ENTRYPOINT
+title: docker RUN vs CMD vs ENTRYPOINT
 description: RUN vs CMD vs ENTRYPOINT
 renderimg: /blog/docker_512.png
 img: /blog/landscape_1920.jpg
