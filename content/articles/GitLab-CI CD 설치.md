@@ -148,3 +148,5 @@ deploy-to-server:
 - [내 머릿속 데이터베이스](https://namioto.ip.or.kr/2018/07/16/gitlab-ci%EB%A1%9C-%EC%9E%90%EB%8F%99%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/)
 - [이야기박스](https://box0830.tistory.com/297)
 - [Kamang's IT Blog](https://kamang-it.tistory.com/entry/gitlabgitlab-cigitlab-ci%EC%9D%98-%EA%B8%B0%EC%B4%88%EC%99%80-%EA%B0%84%EB%9E%B5%ED%95%98%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+- [[깃랩(Gitlab) CI/CD 튜토리얼](https://velog.io/@wickedev/Gitlab-CICD-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-bljzphditt)]
+- [[Building Docker images with GitLab CI/CD](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)]

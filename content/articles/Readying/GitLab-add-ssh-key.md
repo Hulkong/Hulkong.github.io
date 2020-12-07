@@ -19,3 +19,5 @@ tags:
 [[Opentutorial](https://opentutorials.org/module/432/3742)]
 [[나모](https://namocom.tistory.com/650)]
 [[Tongchun](https://dejavuqa.tistory.com/139#recentEntries)]
+[[gitlab Setting (gitlab 시작하기, 설정)](https://m-falcon.tistory.com/183)]
+[[Pipeline 추가 시 Materials에 gitlab 등록하기](https://dejavuqa.tistory.com/352)]

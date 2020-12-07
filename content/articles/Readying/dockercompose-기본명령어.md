@@ -1,6 +1,7 @@
 ---
 title: 도커컴포즈-기본명령어
 description: 도커컴포즈 기본명령어에 대해 배워보자
+renderimg: /blog/dockercompose_512.png
 img: /blog/landscape_1920.jpg
 alt: Article 1
 author:

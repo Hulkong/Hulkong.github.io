@@ -22,6 +22,12 @@ tags:
 5. Job 등록시 필요한 마라피터를 config.toml에 작성<br/>
 6. config.toml에 concurrent = 4
 
+## 프로세스
+### Step1. Install GitLab-Runner
+### Step2. Register GitLab-Runner
+### Step3. Start GitLab-Runner
+### Step4. Check runner is activated in the project
+
 <br/><br/>
 ## Runner 설치 및 Job 등록
 <br/>
@@ -224,4 +230,14 @@ echo | openssl s_client -CAfile /etc/gitlab-runner/certs/gitlab-hostname.tld.crt
 [[stackoverflow](https://stackoverflow.com/questions/44458410/gitlab-ci-runner-ignore-self-signed-certificate)]
 [[gitlab1](https://gitlab.com/gitlab-org/gitlab-runner/-/issues/3180)]
 [[gitlab2](https://docs.gitlab.com/runner/configuration/tls-self-signed.html)]
+[[gitlab register](https://docs.gitlab.com/runner/register/index.html)]
+[[gitlab install macOS](https://docs.gitlab.com/runner/install/osx.html)]
 [[lesstif](https://www.lesstif.com/gitbook/https-ssl-curl-web-browser-16744456.html)]
+[[gitlab release](https://docs.gitlab.com/runner/install/bleeding-edge.html#download-any-other-tagged-release)]
+[[simonyi](https://simonyi.wordpress.com/2019/07/05/13-gitlab-runner/)]
+[[용감한 남매들](https://bravenamme.github.io/2020/09/16/gitlab-runner-deploy-with-docker/)]
+[[Gitlab CI를 사용하여 도커 이미지를 커밋마다 빌드해보자](https://teamsmiley.github.io/2018/12/24/gitlab-ci/)]
+[[GitLab Runner를 사용하여 GitLab CI 구성하기](https://hihellloitland.tistory.com/65)]
+[[GITLAB-RUNNER 설치](https://linux.systemv.pe.kr/gitlab-runner-%EC%84%A4%EC%B9%98/)]
+[[GitLab-CI Runner 소개, 설치, 등록편 on CentOS, Windows (빌드 & 패키징 & 테스트 자동화)](https://allroundplaying.tistory.com/21)]
+[[Automation Step by Step - Raghav Pal](https://www.youtube.com/watch?v=R8rru9nmZ40&list=PLhW3qG5bs-L8YSnCiyQ-jD8XfHC2W1NL_&index=5)]
