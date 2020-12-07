@@ -1,9 +1,9 @@
 ---
-title: Tips 무료 제작툴 39개 모음
-description: Tips 무료 제작툴 39개 모음
+title: Tips 웹 개발 도우미 TOOLS
+description: Tips 웹 개발 도우미 TOOLS
 renderimg: /blog/tips_512.png
 img: /blog/landscape_1920.jpg
-alt: Tips 무료 제작툴 39개 모음
+alt: Tips 웹 개발 도우미 TOOLS
 author:
   name: Hulkong
   bio: ''
@@ -128,9 +128,18 @@ https://caniuse.com/
 - 디바이스 점유
 - https://gs.statcounter.com/
 
+## 쉬운 웹 개발
+
+- [jsbin](https://jsbin.com)
+- [jsfiddle](https://jsfiddle.net)
+- [codesandbox](https://codesandbox.io)
+
+## Icons
+
+- [Font Awesome](https://fontawesome.com/icons/bars?style=solid)
+
 <br/>
 
-# [참고]
+## [참고]
 
-- [노마드](https://www.youtube.com/watch?v=u3Ph_M2bySg&t=2s)
-- [디자인베이스](https://www.youtube.com/watch?v=Q_gcAAKfGKw&t=245s)
+[[노마드](https://www.youtube.com/watch?v=u3Ph_M2bySg&t=2s)] [[디자인베이스](https://www.youtube.com/watch?v=Q_gcAAKfGKw&t=245s)]

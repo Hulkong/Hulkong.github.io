@@ -25,6 +25,28 @@ tags:
 
 ## [Material Theme](https://marketplace.visualstudio.com/items?itemName=fredrikaverpil.vscode-material-theme)
 
+## Material Icon Theme
+
+## Prettier
+
+## bracket pair colorizer
+
+## Indent rainbow
+
+## Auto Rename Tag
+
+## css peek
+
+## HTML CSS Support
+
+## HTML to CSS autocompletion
+
+## Docker
+
+## Kubernetes
+
+## Emmet
+
 <br/>
 
 # [참고]
