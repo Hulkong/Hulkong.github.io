@@ -47,4 +47,8 @@ tags:
 }
 ```
 
-참고영상: [빔캠프](https://www.youtube.com/watch?v=t_J5s3Fs13A)
+## 참고
+
+[[빔캠프](https://www.youtube.com/watch?v=t_J5s3Fs13A)]
+[[word-break 속성과 word-wrap 속성 알아보기](https://wit.nts-corp.com/2017/07/25/4675)]
+[[word-break 줄바꿈 속성(break-all, keep-all](https://aboooks.tistory.com/189)]
