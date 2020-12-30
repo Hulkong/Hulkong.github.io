@@ -1,0 +1,1 @@
+[gyp ERR! macOS Catalina에서 일어나는 Xcode 또는 CLT 버전 없음 에러 해결](https://velog.io/@joongi-lee/gyp-ERR-macOS-Catalina%EC%97%90%EC%84%9C-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-Xcode-%EB%98%90%EB%8A%94-CLT-%EB%B2%84%EC%A0%84-%EC%97%86%EC%9D%8C-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0)
