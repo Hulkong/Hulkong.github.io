@@ -24,10 +24,10 @@ tags:
 |     Toggle Sidebar     |           Command + b           |       Ctrl + b       |
 |    Toggle Terminal     | ^ + \`        |       Ctrl + \` |
 |   Keyboard Shortcuts   |         Command + k + s         |     Ctrl + k + s     |
-|   beginning of file    |           Command + ⬆           |     Ctrl + Home      |
-|      end of file       |           Command + ⬇           |      Ctrl + End      |
-|   beginning of line    |           Command + ⬅           |         Home         |
-|      end of line       |           Command + ➡           |         end          |
+|   Beginning of file    |           Command + ⬆           |     Ctrl + Home      |
+|      End of file       |           Command + ⬇           |      Ctrl + End      |
+|   Beginning of line    |           Command + ⬅           |         Home         |
+|      End of line       |           Command + ➡           |         end          |
 |     Move Word Left     |           Option + ⬅            |       Ctrl + ⬅       |
 |    Move Word Right     |           Option + ➡            |       Ctrl + ➡       |
 |    Select Word Left    |       Option + Shift + ⬅        |   Ctrl + Shift + ⬅   |
@@ -42,6 +42,7 @@ tags:
 |    Undo Last Cursor    |           Command + u           |       Ctrl + u       |
 |     Insert Cursor      |         Option + click          |     Alt + click      |
 | Column (box) selection |      Shift + Option + drag      |  Shift + Alt + drag  |
+|     Line selection     |    Command + Option + ⬆ / ⬇     |  Ctrl + Alt + ⬆ / ⬇  |
 |      Delete Line       |       Command + Shift + k       |   Ctrl + Shift + k   |
 <br><br>
 
