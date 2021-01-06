@@ -2,7 +2,7 @@
   <div class="">
     <!-- <TheHeader /> -->
     <Nav></Nav>
-    <ul class="flex flex-wrap">
+    <ul class="main-layout flex flex-wrap">
       <li
         v-for="article of articles"
         :key="article.slug"
@@ -12,7 +12,7 @@
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
           class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
         >
-          <img
+          <!-- <img
             v-if="article.renderimg"
             class="h-48 xxlmin:w-1/2 xxlmax:w-full object-contain"
             :src="article.renderimg"
@@ -21,13 +21,13 @@
             v-else
             class="h-48 xxlmin:w-1/2 xxlmax:w-full object-contain"
             :src="article.img"
-          />
+          /> -->
 
           <div
-            class="p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
+            class="list p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
           >
-            <h2 class="font-bold">{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
+            <h2 class="title font-bold">{{ article.title }}</h2>
+            <div v-show="isNow(article.date)" class="new">New!</div>
             <p class="font-bold text-gray-600 text-sm">
               {{ article.description }}
             </p>
@@ -54,18 +54,9 @@
     <footer class="flex justify-center border-gray-500 border-t-2">
       <p class="mt-4">
         Created by
-        <a
-          href="https://twitter.com/debs_obrien"
-          class="font-bold hover:underline"
-          >Debbie O'Brien</a
+        <a href="https://github.com/hulkong" class="font-bold hover:underline"
+          >Hulkong</a
         >
-        at NuxtJS. See the
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="font-bold hover:underline"
-          >tutorial</a
-        >
-        for how to build it.
       </p>
     </footer>
   </div>
@@ -75,7 +66,15 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author', 'renderimg'])
+      .only([
+        'date',
+        'title',
+        'description',
+        'img',
+        'slug',
+        'author',
+        'renderimg'
+      ])
       .sortBy('createdAt', 'desc')
       .fetch()
     const tags = await $content('tags', params.slug)
@@ -85,6 +84,18 @@ export default {
     return {
       articles,
       tags
+    }
+  },
+
+  methods: {
+    /**
+     * @description Checking Current date
+     * @param {Date} date
+     */
+    isNow(date = null) {
+      if (!date) return
+
+      return new Date(date).toDateString() === new Date().toDateString()
     }
   }
 }
@@ -96,13 +107,52 @@ export default {
 }
 
 .article-card {
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0;
 }
+
 .article-card a {
   background-color: #fff;
   border-radius: 8px;
 }
 .article-card img div {
   border-radius: 8px 0 0 8px;
+}
+
+.main-layout {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.list {
+  position: relative;
+}
+
+.new {
+  position: absolute;
+  right: 0;
+  color: #26af8a;
+  border: 1px solid var(--color-border);
+  margin: 0 4px 0 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-height: 28px;
+  background: var(--color-background);
+}
+
+.title {
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  color: var(--color-title);
+  width: 100%;
+  margin: 0;
+  max-width: 600px;
+  font-family: var(--font-brand-tertiary);
 }
 </style>
