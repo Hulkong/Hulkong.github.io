@@ -27,7 +27,8 @@
             class="list p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
           >
             <h2 class="title font-bold">{{ article.title }}</h2>
-            <div v-show="isNow(article.date)" class="new">New!</div>
+            <!-- <div v-show="isNow(article.date)" class="new">New!</div> -->
+            <div class="new">New!</div>
             <p class="font-bold text-gray-600 text-sm">
               {{ article.description }}
             </p>
@@ -138,12 +139,10 @@ export default {
   position: absolute;
   right: 0;
   color: #26af8a;
-  border: 1px solid var(--color-border);
   margin: 0 4px 0 0;
   padding: 5px 10px;
   border-radius: 5px;
   max-height: 28px;
-  background: var(--color-background);
 }
 
 .title {
@@ -153,6 +152,5 @@ export default {
   width: 100%;
   margin: 0;
   max-width: 600px;
-  font-family: var(--font-brand-tertiary);
 }
 </style>
