@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar__logo">
-      <a href="https://github.com/Hulkong">
+      <a href="/">
         <img
           class="logo"
           src="/blog/333x213px-kyh_transparent.png"
