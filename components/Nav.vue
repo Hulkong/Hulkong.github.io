@@ -18,6 +18,8 @@
       <li><a href="">FAQ</a></li>
     </ul>
 
+    <AppSearchInput />
+
     <ul class="navbar__icons" :class="{ active: isIconsActive }">
       <li>
         <a href="https://www.facebook.com/Hulkong2" target="_blank"
