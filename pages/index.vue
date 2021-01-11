@@ -154,5 +154,8 @@ export default {
   width: 100%;
   margin: 0;
   max-width: 600px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>
