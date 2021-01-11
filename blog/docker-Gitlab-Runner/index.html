@@ -1,0 +1,221 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>nuxt-content-article</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content="The [content module](https://content.nuxtjs.org/) is a git files based headless CMS that provides powerful features when it comes to write blogs, documentation sites or just adding content to any regular website. In this post we will go through most of the benefits of this module and discover how we can create a blog with it."><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><script data-n-head="ssr" src="https://kit.fontawesome.com/48fd345132.js" crossorigin="anonymous"></script><link rel="preload" href="/_nuxt/7da6026.js" as="script"><link rel="preload" href="/_nuxt/5b98f8e.js" as="script"><link rel="preload" href="/_nuxt/113442b.js" as="script"><link rel="preload" href="/_nuxt/ba6d858.js" as="script"><link rel="preload" href="/_nuxt/9f1b2a4.js" as="script"><style data-vue-ssr-id="38dfa7e4:0 f52d43e0:0 0623093e:0 fa7ff0ca:0 56b15182:0 12274a1e:0 083745fe:0">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#a0aec0}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#a0aec0}input::placeholder,textarea::placeholder{color:#a0aec0}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.container{width:100%}@media (min-width:320px){.container{max-width:320px}}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1351px){.container{max-width:1351px}}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-blue-500{--bg-opacity:1;background-color:#4299e1;background-color:rgba(66,153,225,var(--bg-opacity))}.focus\:bg-white:focus{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.border-gray-300{--border-opacity:1;border-color:#e2e8f0;border-color:rgba(226,232,240,var(--border-opacity))}.border-gray-500{--border-opacity:1;border-color:#a0aec0;border-color:rgba(160,174,192,var(--border-opacity))}.focus\:border-gray-300:focus{--border-opacity:1;border-color:#e2e8f0;border-color:rgba(226,232,240,var(--border-opacity))}.rounded-md{border-radius:.375rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-t-2{border-top-width:2px}.block{display:block}.flex{display:flex}.table{display:table}.contents{display:contents}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.flex-1{flex:1 1 0%}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.h-48{height:12rem}.h-full{height:100%}.text-sm{font-size:.875rem}.text-2xl{font-size:1.5rem}.text-4xl{font-size:2.25rem}.leading-5{line-height:1.25rem}.m-4{margin:1rem}.mr-2{margin-right:.5rem}.mb-2{margin-bottom:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.mb-4{margin-bottom:1rem}.mt-8{margin-top:2rem}.ml-8{margin-left:2rem}.mt-16{margin-top:4rem}.-mb-3{margin-bottom:-.75rem}.object-contain{-o-object-fit:contain;object-fit:contain}.object-cover{-o-object-fit:cover;object-fit:cover}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.overflow-hidden{overflow:hidden}.overflow-y-scroll{overflow-y:scroll}.p-4{padding:1rem}.p-6{padding:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pr-3{padding-right:.75rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pl-10{padding-left:2.5rem}.placeholder-gray-500::-moz-placeholder{--placeholder-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--placeholder-opacity))}.placeholder-gray-500:-ms-input-placeholder{--placeholder-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--placeholder-opacity))}.placeholder-gray-500::placeholder{--placeholder-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--placeholder-opacity))}.static{position:static}.absolute{position:absolute}.relative{position:relative}.top-32{top:32px}.right-32{right:32px}.left-32{left:32px}.shadow-sm{box-shadow:0 1px 2px 0 rgba(0,0,0,.05)}.hover\:shadow-md:hover{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06)}.text-center{text-align:center}.text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-green-500{--text-opacity:1;color:#48bb78;color:rgba(72,187,120,var(--text-opacity))}.hover\:text-black:hover{--text-opacity:1;color:#000;color:rgba(0,0,0,var(--text-opacity))}.uppercase{text-transform:uppercase}.hover\:underline:hover{text-decoration:underline}.tracking-wider{letter-spacing:.05em}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.w-auto{width:auto}.w-full{width:100%}.w-screen{width:100vw}.z-10{z-index:10}.transform{--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))}.transition{transition-property:background-color,border-color,color,fill,stroke,opacity,box-shadow,transform}.transition-colors{transition-property:background-color,border-color,color,fill,stroke}.transition-shadow{transition-property:box-shadow}.ease-linear{transition-timing-function:linear}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}@-webkit-keyframes ping{75%,to{transform:scale(2);opacity:0}}@keyframes ping{75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}.nuxt-content-highlight{position:relative}.nuxt-content-highlight .filename{position:absolute;right:0;--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity));font-weight:300;z-index:10;margin-right:.5rem;margin-top:.25rem;font-size:.875rem}@media (min-width:320px){.xs\:container{width:100%}}@media (min-width:320px) and (min-width:320px){.xs\:container{max-width:320px}}@media (min-width:320px) and (min-width:640px){.xs\:container{max-width:640px}}@media (min-width:320px) and (min-width:768px){.xs\:container{max-width:768px}}@media (min-width:320px) and (min-width:1024px){.xs\:container{max-width:1024px}}@media (min-width:320px) and (min-width:1280px){.xs\:container{max-width:1280px}}@media (min-width:320px) and (min-width:1351px){.xs\:container{max-width:1351px}}@media (min-width:320px){.xs\:flex-col{flex-direction:column}.xs\:h-84{height:22rem}.xs\:mb-6{margin-bottom:1.5rem}.xs\:py-8{padding-top:2rem;padding-bottom:2rem}.xs\:px-8{padding-left:2rem;padding-right:2rem}.xs\:w-full{width:100%}}@media (min-width:640px){.sm\:container{width:100%}}@media (min-width:640px) and (min-width:320px){.sm\:container{max-width:320px}}@media (min-width:640px) and (min-width:640px){.sm\:container{max-width:640px}}@media (min-width:640px) and (min-width:768px){.sm\:container{max-width:768px}}@media (min-width:640px) and (min-width:1024px){.sm\:container{max-width:1024px}}@media (min-width:640px) and (min-width:1280px){.sm\:container{max-width:1280px}}@media (min-width:640px) and (min-width:1351px){.sm\:container{max-width:1351px}}@media (min-width:768px){.md\:container{width:100%}}@media (min-width:768px) and (min-width:320px){.md\:container{max-width:320px}}@media (min-width:768px) and (min-width:640px){.md\:container{max-width:640px}}@media (min-width:768px) and (min-width:768px){.md\:container{max-width:768px}}@media (min-width:768px) and (min-width:1024px){.md\:container{max-width:1024px}}@media (min-width:768px) and (min-width:1280px){.md\:container{max-width:1280px}}@media (min-width:768px) and (min-width:1351px){.md\:container{max-width:1351px}}@media (min-width:768px){.md\:mb-12{margin-bottom:3rem}.md\:w-1\/3{width:33.333333%}.md\:w-full{width:100%}}@media (min-width:1024px){.lg\:container{width:100%}}@media (min-width:1024px) and (min-width:320px){.lg\:container{max-width:320px}}@media (min-width:1024px) and (min-width:640px){.lg\:container{max-width:640px}}@media (min-width:1024px) and (min-width:768px){.lg\:container{max-width:768px}}@media (min-width:1024px) and (min-width:1024px){.lg\:container{max-width:1024px}}@media (min-width:1024px) and (min-width:1280px){.lg\:container{max-width:1280px}}@media (min-width:1024px) and (min-width:1351px){.lg\:container{max-width:1351px}}@media (min-width:1024px){.lg\:flex-row{flex-direction:row}.lg\:flex-1{flex:1 1 0%}.lg\:h-full{height:100%}.lg\:h-screen{height:100vh}.lg\:overflow-hidden{overflow:hidden}.lg\:py-4{padding-top:1rem;padding-bottom:1rem}.lg\:px-4{padding-left:1rem;padding-right:1rem}.lg\:px-16{padding-left:4rem;padding-right:4rem}.lg\:py-32{padding-top:8rem;padding-bottom:8rem}.lg\:w-1\/2{width:50%}.lg\:w-full{width:100%}}@media (min-width:1280px){.xl\:container{width:100%}}@media (min-width:1280px) and (min-width:320px){.xl\:container{max-width:320px}}@media (min-width:1280px) and (min-width:640px){.xl\:container{max-width:640px}}@media (min-width:1280px) and (min-width:768px){.xl\:container{max-width:768px}}@media (min-width:1280px) and (min-width:1024px){.xl\:container{max-width:1024px}}@media (min-width:1280px) and (min-width:1280px){.xl\:container{max-width:1280px}}@media (min-width:1280px) and (min-width:1351px){.xl\:container{max-width:1351px}}@media (min-width:1351px){.xxlmin\:container{width:100%}}@media (min-width:1351px) and (min-width:320px){.xxlmin\:container{max-width:320px}}@media (min-width:1351px) and (min-width:640px){.xxlmin\:container{max-width:640px}}@media (min-width:1351px) and (min-width:768px){.xxlmin\:container{max-width:768px}}@media (min-width:1351px) and (min-width:1024px){.xxlmin\:container{max-width:1024px}}@media (min-width:1351px) and (min-width:1280px){.xxlmin\:container{max-width:1280px}}@media (min-width:1351px) and (min-width:1351px){.xxlmin\:container{max-width:1351px}}@media (min-width:1351px){.xxlmin\:w-1\/2{width:50%}.xxlmin\:w-full{width:100%}}@media (max-width:1350px){.xxlmax\:container{width:100%}}@media (max-width:1350px) and (min-width:320px){.xxlmax\:container{max-width:320px}}@media (max-width:1350px) and (min-width:640px){.xxlmax\:container{max-width:640px}}@media (max-width:1350px) and (min-width:768px){.xxlmax\:container{max-width:768px}}@media (max-width:1350px) and (min-width:1024px){.xxlmax\:container{max-width:1024px}}@media (max-width:1350px) and (min-width:1280px){.xxlmax\:container{max-width:1280px}}@media (max-width:1350px) and (min-width:1351px){.xxlmax\:container{max-width:1351px}}@media (max-width:1350px){.xxlmax\:flex-col{flex-direction:column}.xxlmax\:w-full{width:100%}}@font-face{font-family:Quicksand;src:url(/_nuxt/fonts/Quicksand-Light.188ca70.ttf) format("truetype");font-weight:300;font-style:normal}@font-face{font-family:Quicksand;src:url(/_nuxt/fonts/Quicksand-Regular.216d43e.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Quicksand;src:url(/_nuxt/fonts/Quicksand-Medium.865b25e.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Quicksand;src:url(/_nuxt/fonts/Quicksand-SemiBold.c82b184.ttf) format("truetype");font-weight:600;font-style:normal}@font-face{font-family:Quicksand;src:url(/_nuxt/fonts/Quicksand-Bold.0738679.ttf) format("truetype");font-weight:700;font-style:normal}h1,h2,h3,h4,h5,h6{font-family:Quicksand,sans-serif}*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{background:#fff;margin:0;padding:0;font-family:Quicksand,sans-serif;font-size:14px;width:100%;height:auto}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0}dl,ol,ul{list-style:none}fieldset{border:none}legend{display:none}img{border:none}a{color:#767676}a,a:link,a:visited{text-decoration:none}a:active,a:hover{text-decoration:none;color:#010101}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}blockquote,q{quotes:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}a:focus,div:focus{outline:0}code[class*=language-],pre[class*=language-]{text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;color:#c3cee3;background:#263238;font-family:Roboto Mono,monospace;font-size:1em;line-height:1.5em;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#363636}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#363636}:not(pre)>code[class*=language-]{white-space:normal;border-radius:.2em;padding:.1em}pre[class*=language-]{overflow:auto;position:relative;margin:.5em 0;padding:1.25em 1em}.language-css>code,.language-sass>code,.language-scss>code{color:#fd9170}[class*=language-] .namespace{opacity:.7}.token.atrule{color:#c792ea}.token.attr-name{color:#ffcb6b}.token.attr-value,.token.attribute{color:#c3e88d}.token.boolean{color:#c792ea}.token.builtin{color:#ffcb6b}.token.cdata,.token.char{color:#80cbc4}.token.class{color:#ffcb6b}.token.class-name,.token.color{color:#f2ff00}.token.comment{color:#546e7a}.token.constant{color:#c792ea}.token.deleted{color:#f07178}.token.doctype{color:#546e7a}.token.entity{color:#f07178}.token.function{color:#c792ea}.token.hexcode{color:#f2ff00}.token.id,.token.important{color:#c792ea;font-weight:700}.token.inserted{color:#80cbc4}.token.keyword{color:#c792ea;font-style:italic}.token.number{color:#fd9170}.token.operator{color:#89ddff}.token.prolog{color:#546e7a}.token.property{color:#80cbc4}.token.pseudo-class,.token.pseudo-element{color:#c3e88d}.token.punctuation{color:#89ddff}.token.regex{color:#f2ff00}.token.selector{color:#f07178}.token.string{color:#c3e88d}.token.symbol{color:#c792ea}.token.tag,.token.unit{color:#f07178}.token.url{color:#fd9170}.token.variable{color:#f07178}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}html{font-family:"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;box-sizing:border-box}*,:after,:before{box-sizing:border-box;margin:0}.navbar[data-v-29c67234]{--text-color:#f0f4f5;--background-color:#263343;--accent-color:#d49466;display:flex;justify-content:space-between;align-items:center;background-color:var(--background-color);padding:8px 12px;margin-bottom:20px}img[data-v-29c67234]{display:inline}a[data-v-29c67234]{text-decoration:none;color:var(--text-color)}.title[data-v-29c67234]{vertical-align:middle}.navbar__logo[data-v-29c67234]{font-size:24px;color:var(--text-color)}.navbar__logo i[data-v-29c67234]{color:var(--accent-color)}.navbar__logo .logo[data-v-29c67234]{vertical-align:text-top}.navbar__logo .title[data-v-29c67234]{vertical-align:text-bottom}.navbar__menu[data-v-29c67234]{display:flex;visibility:hidden;list-style:none}.navbar__menu li[data-v-29c67234]{padding:8px 12px}.navbar__icons[data-v-29c67234]{list-style:none;color:var(--text-color);display:flex}.navbar__icons li[data-v-29c67234]{padding:8px 12px}.navbar__menu li[data-v-29c67234]:hover{background-color:var(--accent-color);border-radius:4px}.navbar__toggleBtn[data-v-29c67234]{display:none;position:absolute;right:32px;font-size:24px;color:var(--accent-color)}@media screen and (max-width:768px){.navbar[data-v-29c67234]{flex-direction:column;align-items:flex-start;padding:8px 24px}.navbar__icons[data-v-29c67234],.navbar__menu[data-v-29c67234]{display:flex;visibility:hidden;width:100%;height:0;transition:all .3s}.navbar__menu[data-v-29c67234]{flex-direction:column;align-items:center}.navbar__menu li[data-v-29c67234]{width:100%;text-align:center}.navbar__icons[data-v-29c67234]{justify-content:center}.navbar__icons.active[data-v-29c67234],.navbar__menu.active[data-v-29c67234]{visibility:visible;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.navbar__toggleBtn[data-v-29c67234]{display:block;transform:rotate(0);transition:transform .5s}.navbar__toggleBtn.active[data-v-29c67234]{transform:rotate(90deg);transition:transform .5s}}.slug-container{max-width:768px;margin:0 auto}.nuxt-content p{margin-bottom:20px}.nuxt-content h2{font-weight:700;font-size:28px}.nuxt-content h3{font-weight:700;font-size:22px}.icon.icon-link{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48cGF0aCBjbGFzcz0iaGVyb2ljb24tdWkiIGQ9Ik0xMS4wMyA4aDMuOTRsMS4wNi00LjI0YTEgMSAwIDEgMSAxLjk0LjQ4TDE3LjAzIDhIMjBhMSAxIDAgMCAxIDAgMmgtMy40N2wtMSA0SDE4YTEgMSAwIDEgMSAwIDJoLTIuOTdsLTEuMDYgNC4yNWExIDEgMCAxIDEtMS45NC0uNDlsLjk0LTMuNzZIOS4wM2wtMS4wNiA0LjI1YTEgMSAwIDEgMS0xLjk0LS40OUw2Ljk3IDE2SDRhMSAxIDAgMCAxIDAtMmgzLjQ3bDEtNEg2YTEgMSAwIDAgMSAwLTJoMi45N2wxLjA2LTQuMjRhMSAxIDAgMSAxIDEuOTQuNDhMMTEuMDMgOHptLS41IDJsLTEgNGgzLjk0bDEtNGgtMy45NHoiLz48L3N2Zz4NCg==);display:inline-block;width:20px;height:20px;background-size:20px 20px}</style><link rel="preload" href="/_nuxt/static/1610372409/blog/docker-Gitlab-Runner/payload.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="overflow-hidden"><nav class="navbar" data-v-29c67234><div class="navbar__logo" data-v-29c67234><a href="/" data-v-29c67234><img src="/blog/333x213px-kyh_transparent.png" alt width="40" class="logo" data-v-29c67234> <span class="title" data-v-29c67234>Hulkong의 블로그</span></a></div> <ul class="navbar__menu" data-v-29c67234><li data-v-29c67234><a href data-v-29c67234>Home</a></li> <li data-v-29c67234><a href data-v-29c67234>Category</a></li> <li data-v-29c67234><a href data-v-29c67234>FAQ</a></li></ul> <div data-v-29c67234><input type="search" autocomplete="off" placeholder="Search Articles" class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-500 text-gray-700 focus:border-gray-300 rounded-md focus:outline-none focus:bg-white bg-white"> <!----></div> <ul class="navbar__icons" data-v-29c67234><li data-v-29c67234><a href="https://www.facebook.com/Hulkong2" target="_blank" data-v-29c67234><i class="fab fa-facebook-square" data-v-29c67234></i></a></li> <li data-v-29c67234><a href="https://www.instagram.com/hulkongg/" target="_blank" data-v-29c67234><i class="fab fa-instagram" data-v-29c67234></i></a></li> <li data-v-29c67234><a href="https://github.com/Hulkong" target="_blank" data-v-29c67234><i class="fab fa-github" data-v-29c67234></i></a></li></ul> <a href="#" class="navbar__toggleBtn" data-v-29c67234><i class="fas fa-bars" data-v-29c67234></i></a></nav> <article class="slug-container flex w-screen lg: xs:flex-col lg:flex-row"><div class="relative xs:py-8 xs:px-8 lg:py-4 lg:px-4 lg:w-full xs:w-full markdown-body post-right custom-scroll"><h1 class="font-bold text-4xl">docker container Gitlab과 docker container Gitlab-runner 연동</h1> <p>docker container Gitlab과 docker container Gitlab-runner 연동</p> <span><a href="/blog/tag/docker"><span class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear">
+            docker
+          </span></a></span><span><a href="/blog/tag/web_development"><span class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear">
+            web development
+          </span></a></span> <p class="pb-4">Post last updated: January 11, 2021</p> <nav class="pb-6"><ul><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#이슈사항" class="hover:underline py-2">이슈사항</a></li><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#프로세스" class="hover:underline py-2">프로세스</a></li><li><a href="/blog/docker-Gitlab-Runner#step1-install-gitlab-runner" class="hover:underline ml-2 pb-2">Step1. Install GitLab-Runner</a></li><li><a href="/blog/docker-Gitlab-Runner#step2-register-gitlab-runner" class="hover:underline ml-2 pb-2">Step2. Register GitLab-Runner</a></li><li><a href="/blog/docker-Gitlab-Runner#step3-start-gitlab-runner" class="hover:underline ml-2 pb-2">Step3. Start GitLab-Runner</a></li><li><a href="/blog/docker-Gitlab-Runner#step4-check-runner-is-activated-in-the-project" class="hover:underline ml-2 pb-2">Step4. Check runner is activated in the project</a></li><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#runner-설치-및-job-등록" class="hover:underline py-2">Runner 설치 및 Job 등록</a></li><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#gitlab-ciyml-생성" class="hover:underline py-2">.gitlab-ci.yml 생성</a></li><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#오류" class="hover:underline py-2">오류</a></li><li class="font-semibold"><a href="/blog/docker-Gitlab-Runner#참고" class="hover:underline py-2">참고</a></li></ul></nav> <div class="nuxt-content"><h2 id="이슈사항"><a href="#%EC%9D%B4%EC%8A%88%EC%82%AC%ED%95%AD" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>이슈사항</h2>
+<br>
+1. 현재 docker 명령어로 되어있는 부분을 docker-compose 파일로 변경<br>
+2. .gitlab-ci.yml 프로세스 재정리<br>
+3. 컨테이너 기반 runner는 job실행시 로컬 캐쉬를 사용하지 못한다는 단점으로 인해 사용을 지양<br>
+4. Job 등록시 특정 디렉토리 마운트(최적화 위함)<br>
+5. Job 등록시 필요한 마라피터를 config.toml에 작성<br>
+6. config.toml에 concurrent = 4
+<h2 id="프로세스"><a href="#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>프로세스</h2>
+<h3 id="step1-install-gitlab-runner"><a href="#step1-install-gitlab-runner" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step1. Install GitLab-Runner</h3>
+<h3 id="step2-register-gitlab-runner"><a href="#step2-register-gitlab-runner" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step2. Register GitLab-Runner</h3>
+<h3 id="step3-start-gitlab-runner"><a href="#step3-start-gitlab-runner" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step3. Start GitLab-Runner</h3>
+<h3 id="step4-check-runner-is-activated-in-the-project"><a href="#step4-check-runner-is-activated-in-the-project" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Step4. Check runner is activated in the project</h3>
+<p><br><br></p>
+<h2 id="runner-설치-및-job-등록"><a href="#runner-%EC%84%A4%EC%B9%98-%EB%B0%8F-job-%EB%93%B1%EB%A1%9D" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>Runner 설치 및 Job 등록</h2>
+<br>
+<h4>Docker 컨테이너 기반 runner 설치방법</h4>
+<br>
+1. GitLab이 없을경우 컨테이너 생성
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>docker run --detach <span class="token punctuation">\</span>
+    --publish <span class="token number">80</span>:80 --publish <span class="token number">22</span>:22 <span class="token punctuation">\</span>
+    --name gitlab <span class="token punctuation">\</span>
+    --volume gitlab-config:/home/ailab/GitLab <span class="token punctuation">\</span>
+    --volume gitlab-logs:/home/ailab/GitLab/log <span class="token punctuation">\</span>
+    --volume gitlab-data:/home/ailab/GitLab/data <span class="token punctuation">\</span>
+    gitlab/gitlab-ce:10.2.8-ce.0
+</code></pre></div>
+<br>
+2. GitLab Runner 컨테이너 생성
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>docker run --detach <span class="token punctuation">\</span>
+    --name gitlab-runner <span class="token punctuation">\</span>
+    --restart always <span class="token punctuation">\</span>
+    --volume gitlab-runner:/etc/gitlab-runner <span class="token punctuation">\</span>
+    --volume /var/run/docker.sock:/var/run/docker.sock <span class="token punctuation">\</span>
+    gitlab/gitlab-runner:alpine-v10.7.4
+</code></pre></div>
+<br>
+3. 컨테이너간 통신을 위한 네트워크 설정
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>docker network create gitlab-network
+docker network connect gitlab-network gitlab
+docker network connect gitlab-network gitlab-runner
+</code></pre></div>
+<br>
+4. ssl 서버인증서 설정
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>docker <span class="token builtin class-name">exec</span> -it gitlab-runner <span class="token function">bash</span>
+
+openssl s_client -connect <span class="token string">'input server domain'</span>:443 <span class="token operator">|</span><span class="token function">tee</span> certlog  <span class="token comment"># QUIT 입력</span>
+openssl x509 -inform PEM -in certlog -text -out /etc/gitlab-runner/certs/<span class="token string">'input the filename'</span> <span class="token comment"># 서버 인증서 생성</span>
+openssl x509 -inform PEM -text -in /etc/gitlab-runner/certs/<span class="token string">'input the filename'</span> <span class="token comment"># 확인 과정</span>
+</code></pre></div>
+<br>
+5. Job 등록
+<br><br>
+<ul>
+<li>Inter active 방법</li>
+</ul>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>gitlab-runner register -n <span class="token punctuation">\</span>
+--url http://gitlab/ <span class="token punctuation">\</span>
+--registration-token <span class="token string">'input the token'</span> <span class="token punctuation">\</span>
+--description gitlab-runner <span class="token punctuation">\</span>
+--executor shell
+</code></pre></div>
+<br>
+<ul>
+<li>Non-Inter active 방법</li>
+</ul>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>gitlab-runner register -n <span class="token punctuation">\</span>
+--url <span class="token string">'input git domain or ip'</span> <span class="token punctuation">\</span>
+--registration-token <span class="token string">'input the token'</span> <span class="token punctuation">\</span>
+--description gitlab-runner <span class="token punctuation">\</span>
+--executor docker <span class="token punctuation">\</span>
+--docker-image docker:latest <span class="token punctuation">\</span>
+--docker-volumes /var/run/docker.sock:/var/run/docker.sock
+</code></pre></div>
+<br>
+<ul>
+<li>Runner 생성과 동시에 Job 등록하는 방법</li>
+</ul>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code>docker run -it  <span class="token punctuation">\</span>
+--detach <span class="token punctuation">\</span>
+--name gitlab-runner <span class="token punctuation">\</span>
+--volume /home/hulkong/<span class="token string">'input .crt file'</span>:/<span class="token string">'input .crt file'</span> <span class="token punctuation">\</span>
+--volume /var/run/docker.sock:/var/run/docker.sock <span class="token punctuation">\</span>
+gitlab/gitlab-runner:alpine-v10.7.4 <span class="token punctuation">\</span>
+register -n <span class="token punctuation">\</span>
+--tls-ca-file /<span class="token string">'input .crt file'</span> <span class="token punctuation">\</span>
+--url <span class="token string">'input git domain or ip'</span> <span class="token punctuation">\</span>
+--registration-token <span class="token string">'input the token'</span> <span class="token punctuation">\</span>
+--description gitlab-runner <span class="token punctuation">\</span>
+--executor docker <span class="token punctuation">\</span>
+--docker-image docker:latest <span class="token punctuation">\</span>
+--docker-volumes /var/run/docker.sock:/var/run/docker.sock
+
+<span class="token comment"># Runner 설치 및 시작</span>
+docker <span class="token builtin class-name">exec</span> -it gitlab-runner gitlab-runner <span class="token function">install</span>
+docker <span class="token builtin class-name">exec</span> -it gitlab-runner gitlab-runner start
+</code></pre></div>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code><span class="token comment"># crt 포맷을 PEM 포맷으로 변경하는 방법</span>
+openssl x509 -in mycert.crt -out mycert.pem -outform PEM
+</code></pre></div>
+<p><br><br></p>
+<h2 id="gitlab-ciyml-생성"><a href="#gitlab-ciyml-%EC%83%9D%EC%84%B1" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>.gitlab-ci.yml 생성</h2>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-yml"><code><span class="token comment"># This file is a template, and might need editing before it works on your project.</span>
+<span class="token comment"># Official docker image.</span>
+<span class="token key atrule">image</span><span class="token punctuation">:</span> docker<span class="token punctuation">:</span>latest
+
+<span class="token key atrule">stages</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> build
+  <span class="token punctuation">-</span> test
+  <span class="token punctuation">-</span> deploy
+
+<span class="token key atrule">variables</span><span class="token punctuation">:</span>
+  <span class="token key atrule">GIT_SSL_NO_VERIFY</span><span class="token punctuation">:</span> <span class="token string">"1"</span>
+
+<span class="token key atrule">cache</span><span class="token punctuation">:</span>
+  <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> frontend/node_modules/
+    <span class="token punctuation">-</span> backend/venv/
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> docker<span class="token punctuation">:</span>dind
+
+<span class="token key atrule">before_script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> echo "Before script section"
+  <span class="token punctuation">-</span> echo "For example you might run an update here or install a build dependency"
+  <span class="token punctuation">-</span> echo "Or perhaps you might print out some debugging details"
+  <span class="token punctuation">-</span> apk add <span class="token punctuation">-</span><span class="token punctuation">-</span>no<span class="token punctuation">-</span>cache docker<span class="token punctuation">-</span>compose
+
+<span class="token key atrule">after_script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> echo "After script section"
+  <span class="token punctuation">-</span> echo "For example you might do some cleanup here"
+
+<span class="token key atrule">build-release</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> build
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> echo "Do your build here in release"
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> release
+
+<span class="token key atrule">build-dev</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> build
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> echo "Do your build here in development"
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> develop
+
+<span class="token key atrule">test-1</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">script</span><span class="token punctuation">:</span> 
+    <span class="token punctuation">-</span> echo "Do a test here"
+    <span class="token punctuation">-</span> echo "For example run a test suite"
+  <span class="token key atrule">except</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> develop
+
+<span class="token key atrule">test-2</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">script</span><span class="token punctuation">:</span> 
+    <span class="token punctuation">-</span> echo "Do a test here"
+    <span class="token punctuation">-</span> echo "For example run a test suite"
+  <span class="token key atrule">except</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> develop
+
+<span class="token key atrule">deploy-release</span><span class="token punctuation">:</span>
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> echo "Do your deploy here in release"
+    <span class="token punctuation">-</span> docker<span class="token punctuation">-</span>compose down
+    <span class="token punctuation">-</span> docker<span class="token punctuation">-</span>compose <span class="token punctuation">-</span>f docker<span class="token punctuation">-</span>compose.prod.yml up <span class="token punctuation">-</span>d
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> release
+<span class="token key atrule">deploy-dev</span><span class="token punctuation">:</span>
+
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> deploy
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> echo "Do your deploy here in development"
+    <span class="token punctuation">-</span> docker<span class="token punctuation">-</span>compose down
+    <span class="token punctuation">-</span> docker<span class="token punctuation">-</span>compose <span class="token punctuation">-</span>f docker<span class="token punctuation">-</span>compose.dev.yml up <span class="token punctuation">-</span>d
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> develop
+</code></pre></div>
+<p><br><br></p>
+<h2 id="오류"><a href="#%EC%98%A4%EB%A5%98" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>오류</h2>
+<div class="nuxt-content-highlight"><pre class="line-numbers language-bash"><code><span class="token comment"># 오류내용</span>
+Couldn't execute POST against https://hostname.tld/api/v4/jobs/request:
+Post https://hostname.tld/api/v4/jobs/request: x509: certificate signed by unknown authority
+
+<span class="token comment"># 해결책</span>
+<span class="token builtin class-name">echo</span> <span class="token operator">|</span> openssl s_client -CAfile /etc/gitlab-runner/certs/gitlab-hostname.tld.crt -connect gitlab-hostname.tld:443
+</code></pre></div>
+<p><br><br></p>
+<h2 id="참고"><a href="#%EC%B0%B8%EA%B3%A0" aria-hidden="true" tabindex="-1"><span class="icon icon-link"></span></a>참고</h2>
+<p>[<a href="https://stackoverflow.com/questions/44458410/gitlab-ci-runner-ignore-self-signed-certificate" rel="nofollow noopener noreferrer" target="_blank">stackoverflow</a>]
+[<a href="https://gitlab.com/gitlab-org/gitlab-runner/-/issues/3180" rel="nofollow noopener noreferrer" target="_blank">gitlab1</a>]
+[<a href="https://docs.gitlab.com/runner/configuration/tls-self-signed.html" rel="nofollow noopener noreferrer" target="_blank">gitlab2</a>]
+[<a href="https://docs.gitlab.com/runner/register/index.html" rel="nofollow noopener noreferrer" target="_blank">gitlab register</a>]
+[<a href="https://docs.gitlab.com/runner/install/osx.html" rel="nofollow noopener noreferrer" target="_blank">gitlab install macOS</a>]
+[<a href="https://www.lesstif.com/gitbook/https-ssl-curl-web-browser-16744456.html" rel="nofollow noopener noreferrer" target="_blank">lesstif</a>]
+[<a href="https://docs.gitlab.com/runner/install/bleeding-edge.html#download-any-other-tagged-release" rel="nofollow noopener noreferrer" target="_blank">gitlab release</a>]
+[<a href="https://simonyi.wordpress.com/2019/07/05/13-gitlab-runner/" rel="nofollow noopener noreferrer" target="_blank">simonyi</a>]
+[<a href="https://bravenamme.github.io/2020/09/16/gitlab-runner-deploy-with-docker/" rel="nofollow noopener noreferrer" target="_blank">용감한 남매들</a>]
+[<a href="https://teamsmiley.github.io/2018/12/24/gitlab-ci/" rel="nofollow noopener noreferrer" target="_blank">Gitlab CI를 사용하여 도커 이미지를 커밋마다 빌드해보자</a>]
+[<a href="https://hihellloitland.tistory.com/65" rel="nofollow noopener noreferrer" target="_blank">GitLab Runner를 사용하여 GitLab CI 구성하기</a>]
+[<a href="https://linux.systemv.pe.kr/gitlab-runner-%EC%84%A4%EC%B9%98/" rel="nofollow noopener noreferrer" target="_blank">GITLAB-RUNNER 설치</a>]
+[<a href="https://allroundplaying.tistory.com/21" rel="nofollow noopener noreferrer" target="_blank">GitLab-CI Runner 소개, 설치, 등록편 on CentOS, Windows (빌드 & 패키징 & 테스트 자동화)</a>]
+[<a href="https://www.youtube.com/watch?v=R8rru9nmZ40&list=PLhW3qG5bs-L8YSnCiyQ-jD8XfHC2W1NL_&index=5" rel="nofollow noopener noreferrer" target="_blank">Automation Step by Step - Raghav Pal</a>]</p></div> <div class="w-full px-2 xs:mb-6 md:mb-12 article-card"><a href="https://github.com/Hulkong" target="_blank" class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"><img src="/blog/333x213px-kyh.png" class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"> <div class="flex flex-col m-4"><h4 class="font-semibold">Author</h4> <p>Hulkong</p> <p></p></div></a></div> <div class="flex justify-between mt-8"><a href="/blog/Tips-%EC%9B%B9%EA%B0%9C%EB%B0%9C_%EB%8F%84%EC%9A%B0%EB%AF%B8%ED%88%B4" class="text-primary font-bold hover:underline">
+    Tips 웹 개발 도우미 TOOLS
+  </a> <a href="/blog/postgreSQL-Lock%20%EA%B2%BD%ED%95%A9%EC%83%81%ED%83%9C%20%ED%99%95%EC%9D%B8" class="font-bold hover:underline">
+    postgreSQL Lock 경합상태 확인
+  </a></div></div></article></div></div></div><script>window.__NUXT__={staticAssetsBase:"/_nuxt/static/1610372409",layout:"default",error:null,serverRendered:!0,routePath:"/blog/docker-Gitlab-Runner",config:{content:{dbHash:"e54cdd1b"}}}</script><script src="/_nuxt/7da6026.js" defer></script><script src="/_nuxt/9f1b2a4.js" defer></script><script src="/_nuxt/5b98f8e.js" defer></script><script src="/_nuxt/113442b.js" defer></script><script src="/_nuxt/ba6d858.js" defer></script>
+  </body>
+</html>
