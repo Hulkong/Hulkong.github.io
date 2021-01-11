@@ -1,16 +1,15 @@
 <template>
-  <div class="">
+  <div class="root-container">
     <!-- <TheHeader /> -->
-    <Nav></Nav>
     <ul class="main-layout flex flex-wrap">
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="xs:w-full md:w-1/2 px-2 xs:mb-6 md:mb-12 article-card"
+        class="xs:w-full md:w-full px-2 xs:mb-6 md:mb-12 article-card"
       >
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-          class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
+          class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md"
         >
           <!-- <img
             v-if="article.renderimg"
@@ -24,13 +23,19 @@
           /> -->
 
           <div
-            class="list p-6 flex flex-col justify-between xxlmin:w-1/2 xxlmax:w-full"
+            class="list p-6 flex flex-col justify-between xxlmin:w-full xxlmax:w-full"
           >
             <h2 class="title font-bold">{{ article.title }}</h2>
             <div v-show="isNow(article.date)" class="new">New!</div>
-            <p class="font-bold text-gray-600 text-sm">
-              {{ article.description }}
-            </p>
+            <span v-for="(tag, id) in article.tags" :key="id">
+              <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
+                <span
+                  class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
+                >
+                  {{ tags[tag].name }}
+                </span>
+              </NuxtLink>
+          </span>
           </div>
         </NuxtLink>
       </li>
@@ -77,6 +82,7 @@ export default {
       ])
       .sortBy('createdAt', 'desc')
       .fetch()
+
     const tags = await $content('tags', params.slug)
       .only(['name', 'description', 'img', 'slug'])
       .sortBy('createdAt', 'asc')
@@ -123,9 +129,6 @@ export default {
 }
 
 .main-layout {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -138,12 +141,10 @@ export default {
   position: absolute;
   right: 0;
   color: #26af8a;
-  border: 1px solid var(--color-border);
   margin: 0 4px 0 0;
   padding: 5px 10px;
   border-radius: 5px;
   max-height: 28px;
-  background: var(--color-background);
 }
 
 .title {
@@ -153,6 +154,8 @@ export default {
   width: 100%;
   margin: 0;
   max-width: 600px;
-  font-family: var(--font-brand-tertiary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>

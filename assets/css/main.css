@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('~assets/fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('~assets/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('~assets/fonts/Quicksand-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('~assets/fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('~assets/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*손글씨*/
+
+/*나눔스퀘어*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Quicksand, sans-serif;
+}
+
+/*set_up-----------------------------------------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, ol, dl {
+    list-style: none;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+img {
+    border: none;
+}
+
+/*텍스트 밑줄 없애기*/
+
+a {
+    text-decoration: none;
+    color: #767676;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+    color: #010101;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #010101;
+}
+
+/*인용구*/
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+/*추가 편의*/
+
+div:focus, a:focus {
+    outline: none;
+}

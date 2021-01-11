@@ -13,15 +13,31 @@ tags:
   - web development
 ---
 
-## font-size는 상속
+# EM과 REM에 대해서 알아봅시다.
 
-## 기본 웹브라우저 폰트사이즈는 16px
+**EM이란?**  
+em은 어원적으로 M을 뜻합니다.  
+해당 태그의 font-size의 영향을 받습니다.
 
-## 'M'문자를 기준
+**REM이란?**  
+Root EM의 약자입니다.  
+최상위 엘리먼트(html)의 폰트 크기에만 영향을 받습니다.
 
-## EM
+<br/>
 
-- 부모 폰트크기에 비례해야할 경우
+> > 다음과 같은 내용을 알고 있으면 학습하시는데 도움이 될 것입니다.
+
+- REM의 지원브라우저  
+  IE 11, Edge 14 이후, Firefox 52 이후, Chrome 49 이후, Safari 10.1 이후, Opera 45버전 이후
+- font-size는 상속됩니다.
+- 기본 웹브라우저 폰트사이즈는 16px이며, 변경 가능합니다.
+- REM과 EM 모두 'M'문자가 기준이 됩니다.
+
+<br/><br/>
+
+# EM
+
+## 부모 폰트크기에 비례해야할 경우
 
 ```css
 .box h2 {
@@ -36,7 +52,9 @@ tags:
 }
 ```
 
-- letter-spacting
+<br/>
+
+## letter-spacting
 
 ```css
 .box h2 span {
@@ -46,7 +64,9 @@ tags:
 }
 ```
 
-- 가상클래스 before
+<br/>
+
+## 가상클래스 before
 
 ```css
 .box h2:before {
@@ -60,7 +80,9 @@ tags:
 }
 ```
 
-- 버튼 시리즈 padding
+<br/>
+
+## 버튼 시리즈 padding
 
 ```css
 .button-wrapper {
@@ -84,4 +106,8 @@ tags:
 }
 ```
 
-참고영상: [빔캠프](https://www.youtube.com/watch?v=47xHPFQ1Ll4)
+<br/><br/>
+
+## 참고
+
+[빔캠프](https://www.youtube.com/watch?v=47xHPFQ1Ll4)

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="overflow-hidden">
+    <Nav></Nav>
     <Nuxt />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar__logo">
-      <a href="https://github.com/Hulkong">
+      <a href="/">
         <img
           class="logo"
           src="/blog/333x213px-kyh_transparent.png"
@@ -17,6 +17,8 @@
       <li><a href="">Category</a></li>
       <li><a href="">FAQ</a></li>
     </ul>
+
+    <AppSearchInput />
 
     <ul class="navbar__icons" :class="{ active: isIconsActive }">
       <li>

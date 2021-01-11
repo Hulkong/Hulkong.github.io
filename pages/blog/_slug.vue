@@ -1,25 +1,13 @@
 <template>
   <article
-    class="flex lg:h-screen w-screen lg:overflow-hidden xs:flex-col lg:flex-row"
+    class="slug-container flex w-screen lg: xs:flex-col lg:flex-row"
   >
-    <div class="relative lg:w-1/2 xs:w-full xs:h-84 lg:h-full post-left">
-      <img
-        :src="article.img"
-        :alt="article.alt"
-        class="absolute h-full w-full object-cover"
-      />
-      <div class="overlay"></div>
-      <div class="absolute top-32 left-32 text-white">
-        <NuxtLink to="/"><Logo /></NuxtLink>
-        <div class="mt-16 -mb-3 flex uppercase text-sm">
-          <p class="mr-3">
-            {{ formatDate(article.updatedAt) }}
-          </p>
-          <span class="mr-3">•</span>
-          <p>{{ article.author.name }}</p>
-        </div>
-        <h1 class="text-6xl font-bold">{{ article.title }}</h1>
-        <span v-for="(tag, id) in article.tags" :key="id">
+    <div
+      class="relative xs:py-8 xs:px-8 lg:py-4 lg:px-4 lg:w-full xs:w-full markdown-body post-right custom-scroll"
+    >
+      <h1 class="font-bold text-4xl">{{ article.title }}</h1>
+      <p>{{ article.description }}</p>
+      <span v-for="(tag, id) in article.tags" :key="id">
           <NuxtLink :to="`/blog/tag/${tags[tag].slug}`">
             <span
               class="truncate uppercase tracking-wider font-medium text-ss px-2 py-1 rounded-full mr-2 mb-2 border border-light-border dark:border-dark-border transition-colors duration-300 ease-linear"
@@ -28,28 +16,6 @@
             </span>
           </NuxtLink>
         </span>
-      </div>
-      <div class="flex absolute top-3rem right-3rem">
-        <NuxtLink
-          to="/"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          All articles
-        </NuxtLink>
-        <a
-          href="https://nuxtjs.org/blog/creating-blog-with-nuxt-content"
-          class="mr-8 self-center text-white font-bold hover:underline"
-        >
-          Tutorial
-        </a>
-        <AppSearchInput />
-      </div>
-    </div>
-    <div
-      class="relative xs:py-8 xs:px-8 lg:py-32 lg:px-16 lg:w-1/2 xs:w-full h-full overflow-y-scroll markdown-body post-right custom-scroll"
-    >
-      <h1 class="font-bold text-4xl">{{ article.title }}</h1>
-      <p>{{ article.description }}</p>
       <p class="pb-4">Post last updated: {{ formatDate(article.updatedAt) }}</p>
       <!-- table of contents -->
       <nav class="pb-6">
@@ -112,6 +78,11 @@ export default {
 }
 </script>
 <style>
+.slug-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .nuxt-content p {
   margin-bottom: 20px;
 }
